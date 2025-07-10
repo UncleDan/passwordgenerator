@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="it">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Scelta Versione</title>
+  <style>
+    body {
+      background: #f8f9fa;
+      margin: 0;
+      padding: 2rem;
+      font-family: Arial, sans-serif;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      min-height: 100vh;
+    }
+    h1 {
+      margin-bottom: 2rem;
+      font-weight: normal;
+    }
+    .button-container {
+      display: flex;
+      flex-direction: column;
+      gap: 2rem;
+      width: 100%;
+      max-width: 400px;
+    }
+    .big-btn {
+      padding: 2rem;
+      font-size: 1.8rem;
+      font-weight: bold;
+      border: none;
+      border-radius: 20px;
+      cursor: pointer;
+      transition: transform 0.1s ease, box-shadow 0.2s ease;
+      font-family: 'Courier New', Courier, monospace;
+      text-transform: uppercase;
+    }
+    .big-btn:active {
+      transform: scale(0.97);
+    }
+
+    .html-btn {
+      background-color: #00CED1; /* ciano */
+      color: black;
+    }
+
+    .php-btn {
+      background-color: #800080; /* viola */
+      color: white;
+    }
+  </style>
+</head>
+<body>
+  <h1>Scegli una versione</h1>
+  <div class="button-container">
+    <button class="big-btn html-btn" onclick="location.href='password-generator-HTML.html'">HTML</button>
+    <button class="big-btn php-btn" onclick="location.href='password-generator-PHP.php'">PHP</button>
+  </div>
+</body>
+</html>
